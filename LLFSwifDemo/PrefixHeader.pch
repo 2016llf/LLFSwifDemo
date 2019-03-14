@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  LLFSwifDemo
+//
+//  Created by 帮啦跑腿 on 2019/3/14.
+//  Copyright © 2019 刘龙飞. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "AppConfig.h"
+
+
+#endif /* PrefixHeader_pch */
+
+///路径
+/// Users/jin/Documents/LLFSwifDemo/LLFSwifDemo/PrefixHeader.pch
+// $(SRCROOT)/项目名称/PrefixHeader.pch
+// $(SRCROOT)/LLFSwifDemo/PrefixHeader.pch
+
+

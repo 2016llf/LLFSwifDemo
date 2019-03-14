@@ -15,8 +15,22 @@ class LLFFourViewController: LLFBaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let btn = UIButton(type: .custom)
+        btn.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        btn.backgroundColor = UIColor.yellow
+        btn.setTitleColor(UIColor.black, for: .normal)
+        btn.setTitle("下一个页面", for: .normal)
+        btn.addTarget(self, action: #selector(touchBtn(btn:)), for: .touchUpInside)
+        
+        self.view.addSubview(btn)
+        
     }
     
+    @objc func touchBtn(btn: UIButton){
+        NSLog(message: "goto")
+        self.navigationController?.pushViewController(LLFOneViewController(), animated: true)
+    }
 
     /*
     // MARK: - Navigation

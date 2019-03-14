@@ -19,9 +19,10 @@ class LLFBaseTabBarViewController: UITabBarController {
         tabBar.barTintColor = UIColor.white //tabbar 背景颜色
         
         self.addChildVC(childVC: LLFOneViewController(), childTitle: "First", imageName: "bs_hui", selectedImageName: "bs_red")
-        self.addChildVC(childVC: LLFOneViewController(), childTitle: "Second", imageName: "bs_hui", selectedImageName: "bs_red")
-        self.addChildVC(childVC: LLFOneViewController(), childTitle: "Third", imageName: "bs_hui", selectedImageName: "bs_red")
-        self.addChildVC(childVC: LLFOneViewController(), childTitle: "Fourth", imageName: "bs_hui", selectedImageName: "bs_red")
+        self.addChildVC(childVC: LLFTwoViewController(), childTitle: "Second", imageName: "bs_hui", selectedImageName: "bs_red")
+        self.addChildVC(childVC: LLFThreeViewController(), childTitle: "Third", imageName: "bs_hui", selectedImageName: "bs_red")
+        self.addChildVC(childVC: LLFFourViewController(), childTitle: "Fourth", imageName: "bs_hui", selectedImageName: "bs_red")
+    
     }
     
 
