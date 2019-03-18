@@ -15,8 +15,8 @@ class LLFBaseTabBarViewController: UITabBarController {
 
         // Do any additional setup after loading the view.
         
-        tabBar.tintColor = UIColor.yellow //tabbar 字体颜色
-        tabBar.barTintColor = UIColor.white //tabbar 背景颜色
+        tabBar.tintColor = UIColor.orange //tabbar 字体颜色
+        tabBar.barTintColor = UIColor.yellow //tabbar 背景颜色
         
         self.addChildVC(childVC: LLFOneViewController(), childTitle: "First", imageName: "bs_hui", selectedImageName: "bs_red")
         self.addChildVC(childVC: LLFTwoViewController(), childTitle: "Second", imageName: "bs_hui", selectedImageName: "bs_red")
@@ -25,16 +25,6 @@ class LLFBaseTabBarViewController: UITabBarController {
     
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     /// 添加子控制器
     private func addChildVC(childVC: UIViewController, childTitle: String, imageName: String, selectedImageName:String)

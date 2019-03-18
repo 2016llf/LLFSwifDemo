@@ -7,6 +7,8 @@
 //
 
 #import "YYYViewController.h"
+///OC调用swif
+#import "LLFSwifDemo-Swift.h"
 
 @interface YYYViewController ()
 
@@ -17,6 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    LLFFourViewController * vc = [[LLFFourViewController alloc]init];
+    [vc YYYYYY];
     
 }
 

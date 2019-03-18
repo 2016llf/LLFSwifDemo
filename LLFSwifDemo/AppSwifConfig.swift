@@ -9,19 +9,63 @@
 import Foundation
 import UIKit
 
-let SCREEN_WIDTH = UIScreen.main.bounds.size.width
-let SCREEN_HEIGHT = UIScreen.main.bounds.size.height
+#if DEBUG
 
-let SCREEN_MAX_LENGTH  = max(SCREEN_WIDTH, SCREEN_HEIGHT)
-let IS_IPHONE_4_OR_LESS = SCREEN_MAX_LENGTH < 568.0
-let IS_IPHONE_5 = SCREEN_MAX_LENGTH == 568.0
-let IS_IPHONE_6 = SCREEN_MAX_LENGTH == 667.0
-let IS_IPHONE_6P = SCREEN_MAX_LENGTH == 736.0
-let IS_IPHONE_X = SCREEN_MAX_LENGTH == 812.0
+var  DOMAIN_PATH        =        "http://114.55.232.19/caicai/api/v1/"
 
-let STATUS_NAV_BAR_Y:CGFloat = IS_IPHONE_X == true ? 88.0 : 64.0
-let TABBAR_HEIGHT:CGFloat = IS_IPHONE_X == true ? 83.0 : 49.0
-let STATUSBAR_HEIGHT:CGFloat = IS_IPHONE_X == true ? 44.0 : 20.0
+#else
+
+var DOMAIN_PATH         =        "http://apiv2.wocaicai.com/caicai/api/v1/"
+
+#endif
+
+/* ****************************************************************************************************************** */
+
+func NSLog<T>(message: T, file: NSString = #file, method: String = #function, line: Int = #line)
+{
+    #if DEBUG
+    print("\(method)[\(line)]: \(message)")
+    #endif
+}
+
+/* ****************************************************************************************************************** */
+
+/// 屏幕宽
+let KScreenWidth = UIScreen.main.bounds.size.width
+/// 屏幕高
+let KScreenHeight = UIScreen.main.bounds.size.height
+
+// 判断是否为iPhone X 系列 根据底部有没有安全距离 横屏34 竖屏21
+var iPhoneXSeriess: Bool {
+    if #available(iOS 11, *) {
+        guard let w = UIApplication.shared.delegate?.window, let unwrapedWindow = w else {
+            return false
+        }
+        if unwrapedWindow.safeAreaInsets.left > 0 || unwrapedWindow.safeAreaInsets.bottom > 0 {
+//            print(unwrapedWindow.safeAreaInsets.bottom)
+            return true
+        }
+    }
+    return false
+}
+
+/// 状态栏高度
+let KStatusBarHeight = UIApplication.shared.statusBarFrame.size.height
+/// 底部tabBar高度
+var KBottomBarHeight: CGFloat {
+    return iPhoneXSeriess ? 83 : 49
+}
+/// 顶部导航栏高度
+var KNavigationBarHeight: CGFloat {
+    return iPhoneXSeriess ? 88 : 64
+}
+/// home indicator
+var KIndicatorHeight: CGFloat {
+    return iPhoneXSeriess ? 34 : 0
+}
+
+/* ****************************************************************************************************************** */
+
 
 /*
  * 颜色

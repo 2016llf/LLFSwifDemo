@@ -28,10 +28,17 @@ class LLFFourViewController: LLFBaseViewController {
     }
     
     @objc func touchBtn(btn: UIButton){
-        NSLog(message: "goto")
-        self.navigationController?.pushViewController(LLFOneViewController(), animated: true)
+        let vc = LLFWKWebViewController()
+        vc.title = "我是一个网页"
+        vc.url = "https://www.hao123.com"
+        vc.webView.reload()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
+    
+    @objc func YYYYYY(){
+        NSLog(message: "sss")
+    }
     /*
     // MARK: - Navigation
 

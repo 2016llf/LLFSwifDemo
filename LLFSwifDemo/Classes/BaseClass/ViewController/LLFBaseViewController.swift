@@ -15,19 +15,23 @@ class LLFBaseViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.white
+        
+        self.navigationController?.navigationBar.isTranslucent = true
+
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
-        
-        print("------------------------------本页面: \(type(of: self)) viewWillAppear")
+        super.viewWillAppear(animated)
+
+        print("------------------------------\(type(of: self)) viewWillAppear")
         
     }
     
     
     deinit {
         
-        print("------------------------------本页面: \(type(of: self)) Dealloc")
+        print("------------------------------\(type(of: self)) Dealloc")
 
     }
     

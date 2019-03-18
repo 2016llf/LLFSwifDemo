@@ -49,11 +49,11 @@ isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bo
 // iPhone X 系列 (安全区域 734 = 812 - kStatusBarHeight - KIndicatorHeight)
 
 // 状态栏高度
-#define kStatusBarHeight        [[UIApplication sharedApplication] statusBarFrame].size.height
+#define KStatusBarHeight        [[UIApplication sharedApplication] statusBarFrame].size.height
 // tabBar高度
-#define kBottomBarHeight        (iPhoneXSeriess ? 83.f : 49.f)
+#define KBottomBarHeight        (iPhoneXSeriess ? 83.f : 49.f)
 // 导航栏高度
-#define kNavigationBarHeight    (iPhoneXSeriess ? 88.f : 64.f)
+#define KNavigationBarHeight    (iPhoneXSeriess ? 88.f : 64.f)
 // home indicator
 #define KIndicatorHeight        (iPhoneXSeriess ? 34.f : 0.f)
 
