@@ -21,10 +21,10 @@ var DOMAIN_PATH         =        "http://apiv2.wocaicai.com/caicai/api/v1/"
 
 /* ****************************************************************************************************************** */
 
-func NSLog<T>(message: T, file: NSString = #file, method: String = #function, line: Int = #line)
+func LLLog<message>(message: message, file: NSString = #file, method: String = #function, line: Int = #line)
 {
     #if DEBUG
-    print("\(method)[\(line)]: \(message)")
+    print("\(method) - [line:\(line)] - \(message)")
     #endif
 }
 
@@ -79,3 +79,5 @@ let INVEST_COM = UIColor(red: 237.0/255, green: 31.0/255, blue: 59.0/255, alpha:
 let INVEST_NEW = UIColor(red: 253.0/255, green: 143.0/255, blue: 27.0/255, alpha: 1.0)
 let BTN_BACK_COLOR = UIColor(red: 18.0/255, green: 147.0/255, blue: 255.0/255, alpha: 1.0)
 let LABEL_BLACK_COLOR = UIColor(red: 30.0/255, green: 30.0/255, blue: 30.0/255, alpha: 1.0)
+
+

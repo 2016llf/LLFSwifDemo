@@ -7,12 +7,11 @@
 //
 
 import UIKit
-
-
+import SwiftyJSON
+import Alamofire
 
 class LLFOneViewController: LLFBaseViewController,UITableViewDelegate,UITableViewDataSource {
     
-
     var titleArray = [String]()
     
     //MARK: - Lazy load
@@ -37,8 +36,9 @@ class LLFOneViewController: LLFBaseViewController,UITableViewDelegate,UITableVie
         self.view.backgroundColor  = UIColor.white
 
         self.view.addSubview(self.tableView)
+        
         self.requestData()
-
+        
     }
     
     //MARK: - UITableViewDataSource
@@ -55,14 +55,17 @@ class LLFOneViewController: LLFBaseViewController,UITableViewDelegate,UITableVie
         let cell = tableView.dequeueReusableCell(withIdentifier: "LLFOneViewTableViewCell", for: indexPath) as! LLFOneViewTableViewCell
         
         cell.blLable.text = self.titleArray[indexPath.row]
-        
         return cell
     }
     
     //MARK: - UITableViewDelegate
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        NSLog(message: indexPath.row)
+        if indexPath.row == 0 {
+            self.navigationController?.pushViewController(LLFGetViewController(), animated: true)
+        }else if indexPath.row == 1{
+            self.navigationController?.pushViewController(LLFPostViewController(), animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -80,10 +83,41 @@ class LLFOneViewController: LLFBaseViewController,UITableViewDelegate,UITableVie
     //MARK: - requestData
     
     func requestData(){
-        self.titleArray = ["1","2","cell是直接用xib拖拽的，很方便有木有","创建内容数组","代理方法的实现","有2个代理方法是必须实现的","天行健君子以自强不息地势看君子以厚德载物","1","2","3","4","5"]
+        self.titleArray = ["Alamofire - get请求","Alamofire - post请求","cell是直接用xib拖拽的","创建内容数组","代理方法的实现","有2个代理方法是必须实现的","天行健君子以自强不息地势看君子以厚德载物"]
+
+        
+        
+        
+        ///模拟数据
+        let baseInfo: [String : Any] = ["build_name":"世界客商中心",
+                                        "build_address":"学院中路与金桥路交汇处东北侧",
+                                        "build_num": 12,
+                                        "room_num": 588,
+                                        "area_address":"广东省梅州市梅江区学海路"]
+        
+        let model = LLFOneViewModel(jsonData: JSON(baseInfo))
+        LLLog(message: model.area_address)
+        
+        
+        // 面积中89是Int， 109和129是String
+        let baseInfoNext: [String : Any] = ["build_name":"置信·原墅",
+                                        "build_address":"学院中路与金桥路交汇处东北侧",
+                                        "area_address":"浙江省温州市鹿城区五马街道",
+                                        "area":[89,"109","129"],
+                                        "detail_address":["province":"浙江省",
+                                                          "city":"温州市",
+                                                          "district":"鹿城区",
+                                                          "street":"五马街道"],
+                                        "build_num": 12,
+                                        "room_num": 588]
+        
+        
+        let modelNext = BuildBaseInfoModel(jsonData: JSON(baseInfoNext))
+        LLLog(message: modelNext.detail_address.city)
+        
     }
-    
     //MARK: - private methods
+
 
 
 }

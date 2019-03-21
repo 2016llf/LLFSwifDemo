@@ -8,6 +8,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class LLFFourViewController: LLFBaseViewController {
 
@@ -25,6 +26,7 @@ class LLFFourViewController: LLFBaseViewController {
         
         self.view.addSubview(btn)
         
+        
     }
     
     @objc func touchBtn(btn: UIButton){
@@ -37,7 +39,6 @@ class LLFFourViewController: LLFBaseViewController {
 
     
     @objc func YYYYYY(){
-        NSLog(message: "sss")
     }
     /*
     // MARK: - Navigation

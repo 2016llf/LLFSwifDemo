@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		3C0FF0A8223F2AFB0090466F /* LLFOneViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0FF0A6223F2AFB0090466F /* LLFOneViewTableViewCell.swift */; };
 		3C0FF0A9223F2AFB0090466F /* LLFOneViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0FF0A7223F2AFB0090466F /* LLFOneViewTableViewCell.xib */; };
+		3C74DB102241C9F20073C6EF /* LLFGetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C74DB0F2241C9F20073C6EF /* LLFGetViewController.swift */; };
+		3C74DB122241E0C60073C6EF /* LLFgetPushHolidayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C74DB112241E0C60073C6EF /* LLFgetPushHolidayModel.swift */; };
+		3C86394222407EF1000FDF82 /* LLFBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C86394122407EF1000FDF82 /* LLFBaseModel.swift */; };
+		3C86394422407F0D000FDF82 /* LLFListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C86394322407F0D000FDF82 /* LLFListModel.swift */; };
+		3C86394622407F20000FDF82 /* LLFDictionaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C86394522407F20000FDF82 /* LLFDictionaryModel.swift */; };
+		3C863948224082FD000FDF82 /* LLFOneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C863947224082FD000FDF82 /* LLFOneViewModel.swift */; };
+		3C86394A2240921C000FDF82 /* BuildBaseInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8639492240921C000FDF82 /* BuildBaseInfoModel.swift */; };
 		3CA051C32238E70200DA81FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA051C22238E70200DA81FF /* AppDelegate.swift */; };
 		3CA051CA2238E70400DA81FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA051C92238E70400DA81FF /* Assets.xcassets */; };
 		3CA051CD2238E70400DA81FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA051CB2238E70400DA81FF /* LaunchScreen.storyboard */; };
@@ -26,6 +33,9 @@
 		3CA052202239068600DA81FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA0521F2239068600DA81FF /* Images.xcassets */; };
 		3CD9E35D223A3AA300783FF8 /* YYYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD9E35C223A3AA300783FF8 /* YYYViewController.m */; };
 		3CD9E35F223A3C9F00783FF8 /* AppSwifConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD9E35E223A3C9F00783FF8 /* AppSwifConfig.swift */; };
+		3CE5A10E224217AB00669E16 /* LLFgetPushModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5A10D224217AB00669E16 /* LLFgetPushModel.swift */; };
+		3CE5A110224225B600669E16 /* LLFPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5A10F224225B600669E16 /* LLFPostViewController.swift */; };
+		3CE5A11222422B3C00669E16 /* ConnectManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5A11122422B3C00669E16 /* ConnectManger.swift */; };
 		8DC0DFC9DB2CF141CC58459E /* Pods_LLFSwifDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF520A88D1E0C197AEE9E7E7 /* Pods_LLFSwifDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +60,13 @@
 		3A32D3E3852BEEEB3B1263F0 /* Pods-LLFSwifDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLFSwifDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLFSwifDemo/Pods-LLFSwifDemo.release.xcconfig"; sourceTree = "<group>"; };
 		3C0FF0A6223F2AFB0090466F /* LLFOneViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFOneViewTableViewCell.swift; sourceTree = "<group>"; };
 		3C0FF0A7223F2AFB0090466F /* LLFOneViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLFOneViewTableViewCell.xib; sourceTree = "<group>"; };
+		3C74DB0F2241C9F20073C6EF /* LLFGetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFGetViewController.swift; sourceTree = "<group>"; };
+		3C74DB112241E0C60073C6EF /* LLFgetPushHolidayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFgetPushHolidayModel.swift; sourceTree = "<group>"; };
+		3C86394122407EF1000FDF82 /* LLFBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFBaseModel.swift; sourceTree = "<group>"; };
+		3C86394322407F0D000FDF82 /* LLFListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFListModel.swift; sourceTree = "<group>"; };
+		3C86394522407F20000FDF82 /* LLFDictionaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFDictionaryModel.swift; sourceTree = "<group>"; };
+		3C863947224082FD000FDF82 /* LLFOneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFOneViewModel.swift; sourceTree = "<group>"; };
+		3C8639492240921C000FDF82 /* BuildBaseInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildBaseInfoModel.swift; sourceTree = "<group>"; };
 		3CA051BF2238E70200DA81FF /* LLFSwifDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLFSwifDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA051C22238E70200DA81FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CA051C92238E70400DA81FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +94,9 @@
 		3CD9E35B223A3AA300783FF8 /* YYYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYYViewController.h; sourceTree = "<group>"; };
 		3CD9E35C223A3AA300783FF8 /* YYYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYYViewController.m; sourceTree = "<group>"; };
 		3CD9E35E223A3C9F00783FF8 /* AppSwifConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSwifConfig.swift; sourceTree = "<group>"; };
+		3CE5A10D224217AB00669E16 /* LLFgetPushModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFgetPushModel.swift; sourceTree = "<group>"; };
+		3CE5A10F224225B600669E16 /* LLFPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFPostViewController.swift; sourceTree = "<group>"; };
+		3CE5A11122422B3C00669E16 /* ConnectManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectManger.swift; sourceTree = "<group>"; };
 		EF520A88D1E0C197AEE9E7E7 /* Pods_LLFSwifDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLFSwifDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28C23B46C6BA0DA3D3F9DD9 /* Pods-LLFSwifDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLFSwifDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLFSwifDemo/Pods-LLFSwifDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,6 +209,7 @@
 		3CA051F22238E76500DA81FF /* Mangera */ = {
 			isa = PBXGroup;
 			children = (
+				3CE5A11122422B3C00669E16 /* ConnectManger.swift */,
 			);
 			path = Mangera;
 			sourceTree = "<group>";
@@ -247,6 +268,8 @@
 			isa = PBXGroup;
 			children = (
 				3CA052172238F35700DA81FF /* LLFOneViewController.swift */,
+				3C74DB0F2241C9F20073C6EF /* LLFGetViewController.swift */,
+				3CE5A10F224225B600669E16 /* LLFPostViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -254,6 +277,10 @@
 		3CA051F92238E7F200DA81FF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3C863947224082FD000FDF82 /* LLFOneViewModel.swift */,
+				3C8639492240921C000FDF82 /* BuildBaseInfoModel.swift */,
+				3C74DB112241E0C60073C6EF /* LLFgetPushHolidayModel.swift */,
+				3CE5A10D224217AB00669E16 /* LLFgetPushModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -345,6 +372,9 @@
 		3CA052052238E88F00DA81FF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3C86394122407EF1000FDF82 /* LLFBaseModel.swift */,
+				3C86394322407F0D000FDF82 /* LLFListModel.swift */,
+				3C86394522407F20000FDF82 /* LLFDictionaryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -587,11 +617,21 @@
 				3CD9E35D223A3AA300783FF8 /* YYYViewController.m in Sources */,
 				3CA051C32238E70200DA81FF /* AppDelegate.swift in Sources */,
 				3CA0520E2238EA0800DA81FF /* LLFBaseNavigationViewController.swift in Sources */,
+				3C863948224082FD000FDF82 /* LLFOneViewModel.swift in Sources */,
+				3CE5A10E224217AB00669E16 /* LLFgetPushModel.swift in Sources */,
+				3C74DB102241C9F20073C6EF /* LLFGetViewController.swift in Sources */,
 				3CA0521E2238F38F00DA81FF /* LLFFourViewController.swift in Sources */,
 				3CA052182238F35700DA81FF /* LLFOneViewController.swift in Sources */,
+				3C86394A2240921C000FDF82 /* BuildBaseInfoModel.swift in Sources */,
 				3CD9E35F223A3C9F00783FF8 /* AppSwifConfig.swift in Sources */,
+				3C86394422407F0D000FDF82 /* LLFListModel.swift in Sources */,
+				3C86394622407F20000FDF82 /* LLFDictionaryModel.swift in Sources */,
+				3C74DB122241E0C60073C6EF /* LLFgetPushHolidayModel.swift in Sources */,
+				3C86394222407EF1000FDF82 /* LLFBaseModel.swift in Sources */,
 				3C0FF0A8223F2AFB0090466F /* LLFOneViewTableViewCell.swift in Sources */,
 				3CA0521A2238F36C00DA81FF /* LLFTwoViewController.swift in Sources */,
+				3CE5A11222422B3C00669E16 /* ConnectManger.swift in Sources */,
+				3CE5A110224225B600669E16 /* LLFPostViewController.swift in Sources */,
 				3CA0521C2238F37D00DA81FF /* LLFThreeViewController.swift in Sources */,
 				3CA0520A2238E96500DA81FF /* LLFBaseViewController.swift in Sources */,
 				3CA052162238F32500DA81FF /* LLFNewFeatureViewController.swift in Sources */,
