@@ -9,21 +9,30 @@
 import UIKit
 import SwiftyJSON
 import Alamofire
+import MJRefresh
 
-class LLFOneViewController: LLFBaseViewController,UITableViewDelegate,UITableViewDataSource {
+class LLFOneViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     var titleArray = [String]()
     
     //MARK: - Lazy load
     
     lazy var tableView: UITableView = {
-        let tableView = UITableView(frame: CGRect(x: 0, y: KNavigationBarHeight, width: KScreenWidth, height: KScreenHeight - KNavigationBarHeight - KBottomBarHeight), style: .plain)
+        let tableView = UITableView(frame: CGRect(x: 0, y: 0, width: KScreenWidth, height: KScreenHeight - KNavigationBarHeight - KBottomBarHeight), style: .plain)
         tableView.estimatedRowHeight = 50
         tableView.backgroundColor = UIColor.red
         tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib.init(nibName: "LLFOneViewTableViewCell", bundle: nil), forCellReuseIdentifier: "LLFOneViewTableViewCell")
+        tableView.mj_header = MJRefreshNormalHeader(refreshingBlock: {
+            print("下拉刷新")
+            tableView.mj_header.endRefreshing()
+        })
+        tableView.mj_footer = MJRefreshBackNormalFooter(refreshingBlock: {
+            print("上拉刷新")
+            tableView.mj_footer.endRefreshing()
+        })
         return tableView
     }()
 
@@ -36,6 +45,8 @@ class LLFOneViewController: LLFBaseViewController,UITableViewDelegate,UITableVie
         self.view.backgroundColor  = UIColor.white
 
         self.view.addSubview(self.tableView)
+        
+        self.tableView.mj_header.beginRefreshing()
         
         self.requestData()
         
@@ -53,7 +64,6 @@ class LLFOneViewController: LLFBaseViewController,UITableViewDelegate,UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LLFOneViewTableViewCell", for: indexPath) as! LLFOneViewTableViewCell
-        
         cell.blLable.text = self.titleArray[indexPath.row]
         return cell
     }
@@ -62,9 +72,14 @@ class LLFOneViewController: LLFBaseViewController,UITableViewDelegate,UITableVie
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
-            self.navigationController?.pushViewController(LLFGetViewController(), animated: true)
+            let vc = LLFGetViewController()
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
+            
         }else if indexPath.row == 1{
-            self.navigationController?.pushViewController(LLFPostViewController(), animated: true)
+            let vc = LLFPostViewController()
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     
@@ -83,7 +98,7 @@ class LLFOneViewController: LLFBaseViewController,UITableViewDelegate,UITableVie
     //MARK: - requestData
     
     func requestData(){
-        self.titleArray = ["Alamofire - get请求","Alamofire - post请求","cell是直接用xib拖拽的","创建内容数组","代理方法的实现","有2个代理方法是必须实现的","天行健君子以自强不息地势看君子以厚德载物"]
+        self.titleArray = ["Alamofire - get请求","Alamofire - post请求","天行健君子以自强不息地势看君子以厚德载物"]
 
         
         

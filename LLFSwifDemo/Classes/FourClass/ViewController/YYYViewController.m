@@ -20,8 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    LLFFourViewController * vc = [[LLFFourViewController alloc]init];
-    [vc YYYYYY];
+//    LLFFourViewController * vc = [[LLFFourViewController alloc]init];
+//    [vc YYYYYY];
     
 }
 

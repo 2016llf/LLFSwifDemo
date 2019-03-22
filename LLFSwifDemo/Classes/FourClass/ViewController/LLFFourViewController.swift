@@ -30,11 +30,11 @@ class LLFFourViewController: LLFBaseViewController {
     }
     
     @objc func touchBtn(btn: UIButton){
-        let vc = LLFWKWebViewController()
-        vc.title = "我是一个网页"
-        vc.url = "https://www.hao123.com"
-        vc.webView.reload()
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = LLFWKWebViewController()
+//        vc.title = "我是一个网页"
+//        vc.url = "https://www.hao123.com"
+//        vc.webView.reload()
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
 
     

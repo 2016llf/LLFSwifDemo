@@ -35,6 +35,10 @@ class ConnectManger: SessionManager {
     }
     
     func requestData(_ type : MethodType, urlString : String, parameters : [String : Any]?, success : @escaping (_ responseObject : [String : AnyObject]) -> (), failure : @escaping (_ error : NSError) -> ()) -> (){
+        
+        LLLog(message: urlString)
+        LLLog(message: parameters)
+
         let method : HTTPMethod
         
         switch type {
@@ -48,16 +52,22 @@ class ConnectManger: SessionManager {
             method = .put
             break
         default:
-            method = .get
+            method = .delete
         }
         
         Alamofire.request(urlString, method: method, parameters: parameters).responseJSON { (response) in
             switch response.result{
             case .success:
                 if let value = response.result.value as? [String : AnyObject]{
+                    
+                    LLLog(message: value)
+                    
                     success(value)
                 }
             case .failure(let error):
+                
+                LLLog(message: error)
+                
                 failure(error as NSError)
             }
         }

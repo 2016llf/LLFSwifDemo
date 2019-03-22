@@ -19,6 +19,8 @@ class LLFGetViewController: LLFBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.title = "get请求"
+        
         self.requestData()
         
     }
@@ -26,7 +28,6 @@ class LLFGetViewController: LLFBaseViewController {
     // MARK：- requestData
     
     func requestData(){
-        //        let url = "https://m.paotui.com/app/json/getPushHoliday?area_code=441402&type=1"
         
         //        let parameters: Parameters = ["key":"s",
         //                                      "area_code":"441402",
@@ -34,6 +35,7 @@ class LLFGetViewController: LLFBaseViewController {
         //        let url = "https://m.paotui.com/app/CommonCoupon/setFirstCoupon"
         
         
+        //        let url = "https://m.paotui.com/app/json/getPushHoliday?area_code=441402&type=1"
         let url = "https://m.paotui.com/app/json/getPushHoliday"
         let parameters: Parameters = ["area_code":"441402",
                                       "type":"1"]

@@ -15,11 +15,17 @@ class LLFPostViewController: LLFBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.title = "post请求"
         
-        let url = "https://m.paotui.com/app/json/getPushHoliday"
-        let parameters: Parameters = ["area_code":"441402",
-                                      "type":"1"]
+//        let url = "https://m.paotui.com/app/json/getPushHoliday"
+//        let parameters: Parameters = ["area_code":"441402",
+//                                      "type":"1"]
+        
+                let url = "https://m.paotui.com/app/CommonCoupon/setFirstCoupon"
+
+                let parameters: Parameters = ["key":"s",
+                                              "area_code":"441402",
+                                              "type":"1"]
         
 //        Alamofire.request(url, method: .post, parameters: parameters, encoding: URLEncoding.default, headers: nil).responseJSON { (response) in
 //
@@ -33,9 +39,9 @@ class LLFPostViewController: LLFBaseViewController {
 //            }
   
         ConnectManger.shareManager().requestData(MethodType.get, urlString: url, parameters: parameters, success: { (response) in
-            print(response.values as Any)
+            
         }) { (NSError) in
-            print("出错咯")
+            
         }
     
     }

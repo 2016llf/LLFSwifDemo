@@ -7,8 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C0DA6E2224487B9006C8D4E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0DA6E1224487B9006C8D4E /* UIView+Extension.swift */; };
+		3C0DA6E4224487E9006C8D4E /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0DA6E3224487E9006C8D4E /* NSObject+Extension.swift */; };
+		3C0DA6E6224487F1006C8D4E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0DA6E5224487F1006C8D4E /* Date+Extension.swift */; };
 		3C0FF0A8223F2AFB0090466F /* LLFOneViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0FF0A6223F2AFB0090466F /* LLFOneViewTableViewCell.swift */; };
 		3C0FF0A9223F2AFB0090466F /* LLFOneViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C0FF0A7223F2AFB0090466F /* LLFOneViewTableViewCell.xib */; };
+		3C60901D224375F100ECF7B9 /* LLFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C60901C224375F100ECF7B9 /* LLFBaseViewController.m */; };
+		3C609023224376C400ECF7B9 /* LLFBaseNavigationeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C609022224376C400ECF7B9 /* LLFBaseNavigationeController.m */; };
+		3C6090282243771000ECF7B9 /* LLFWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6090242243770F00ECF7B9 /* LLFWKWebViewController.m */; };
+		3C6090292243771000ECF7B9 /* NewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C6090262243771000ECF7B9 /* NewFeatureViewController.m */; };
+		3C60902E2243781000ECF7B9 /* LLLBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C60902D2243781000ECF7B9 /* LLLBaseViewController.swift */; };
+		3C6090302243785D00ECF7B9 /* LLLBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C60902F2243785D00ECF7B9 /* LLLBaseTabBarController.swift */; };
+		3C6090322243789D00ECF7B9 /* LLLBaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6090312243789D00ECF7B9 /* LLLBaseNavigationViewController.swift */; };
+		3C609034224378E200ECF7B9 /* LLLWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C609033224378E200ECF7B9 /* LLLWKWebViewController.swift */; };
+		3C609038224379D400ECF7B9 /* UIWindow+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C609037224379D400ECF7B9 /* UIWindow+Category.m */; };
+		3C60903B22437ACE00ECF7B9 /* LLFBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C60903A22437ACD00ECF7B9 /* LLFBaseTabBarViewController.m */; };
 		3C74DB102241C9F20073C6EF /* LLFGetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C74DB0F2241C9F20073C6EF /* LLFGetViewController.swift */; };
 		3C74DB122241E0C60073C6EF /* LLFgetPushHolidayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C74DB112241E0C60073C6EF /* LLFgetPushHolidayModel.swift */; };
 		3C86394222407EF1000FDF82 /* LLFBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C86394122407EF1000FDF82 /* LLFBaseModel.swift */; };
@@ -21,11 +34,6 @@
 		3CA051CD2238E70400DA81FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA051CB2238E70400DA81FF /* LaunchScreen.storyboard */; };
 		3CA051D82238E70400DA81FF /* LLFSwifDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA051D72238E70400DA81FF /* LLFSwifDemoTests.swift */; };
 		3CA051E32238E70400DA81FF /* LLFSwifDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA051E22238E70400DA81FF /* LLFSwifDemoUITests.swift */; };
-		3CA0520A2238E96500DA81FF /* LLFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA052092238E96500DA81FF /* LLFBaseViewController.swift */; };
-		3CA0520E2238EA0800DA81FF /* LLFBaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0520D2238EA0800DA81FF /* LLFBaseNavigationViewController.swift */; };
-		3CA052102238EA2B00DA81FF /* LLFBaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0520F2238EA2B00DA81FF /* LLFBaseTabBarViewController.swift */; };
-		3CA052122238EAE200DA81FF /* LLFWKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA052112238EAE200DA81FF /* LLFWKWebViewController.swift */; };
-		3CA052162238F32500DA81FF /* LLFNewFeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA052152238F32500DA81FF /* LLFNewFeatureViewController.swift */; };
 		3CA052182238F35700DA81FF /* LLFOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA052172238F35700DA81FF /* LLFOneViewController.swift */; };
 		3CA0521A2238F36C00DA81FF /* LLFTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA052192238F36C00DA81FF /* LLFTwoViewController.swift */; };
 		3CA0521C2238F37D00DA81FF /* LLFThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0521B2238F37D00DA81FF /* LLFThreeViewController.swift */; };
@@ -58,8 +66,27 @@
 
 /* Begin PBXFileReference section */
 		3A32D3E3852BEEEB3B1263F0 /* Pods-LLFSwifDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLFSwifDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLFSwifDemo/Pods-LLFSwifDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3C0DA6E1224487B9006C8D4E /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		3C0DA6E3224487E9006C8D4E /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		3C0DA6E5224487F1006C8D4E /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		3C0FF0A6223F2AFB0090466F /* LLFOneViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFOneViewTableViewCell.swift; sourceTree = "<group>"; };
 		3C0FF0A7223F2AFB0090466F /* LLFOneViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLFOneViewTableViewCell.xib; sourceTree = "<group>"; };
+		3C60901B224375F100ECF7B9 /* LLFBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLFBaseViewController.h; sourceTree = "<group>"; };
+		3C60901C224375F100ECF7B9 /* LLFBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLFBaseViewController.m; sourceTree = "<group>"; };
+		3C609021224376C400ECF7B9 /* LLFBaseNavigationeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLFBaseNavigationeController.h; sourceTree = "<group>"; };
+		3C609022224376C400ECF7B9 /* LLFBaseNavigationeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLFBaseNavigationeController.m; sourceTree = "<group>"; };
+		3C6090242243770F00ECF7B9 /* LLFWKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLFWKWebViewController.m; sourceTree = "<group>"; };
+		3C6090252243771000ECF7B9 /* NewFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFeatureViewController.h; sourceTree = "<group>"; };
+		3C6090262243771000ECF7B9 /* NewFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFeatureViewController.m; sourceTree = "<group>"; };
+		3C6090272243771000ECF7B9 /* LLFWKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLFWKWebViewController.h; sourceTree = "<group>"; };
+		3C60902D2243781000ECF7B9 /* LLLBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLLBaseViewController.swift; sourceTree = "<group>"; };
+		3C60902F2243785D00ECF7B9 /* LLLBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLLBaseTabBarController.swift; sourceTree = "<group>"; };
+		3C6090312243789D00ECF7B9 /* LLLBaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLLBaseNavigationViewController.swift; sourceTree = "<group>"; };
+		3C609033224378E200ECF7B9 /* LLLWKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLLWKWebViewController.swift; sourceTree = "<group>"; };
+		3C609036224379D400ECF7B9 /* UIWindow+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Category.h"; sourceTree = "<group>"; };
+		3C609037224379D400ECF7B9 /* UIWindow+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Category.m"; sourceTree = "<group>"; };
+		3C60903922437ACD00ECF7B9 /* LLFBaseTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLFBaseTabBarViewController.h; sourceTree = "<group>"; };
+		3C60903A22437ACD00ECF7B9 /* LLFBaseTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLFBaseTabBarViewController.m; sourceTree = "<group>"; };
 		3C74DB0F2241C9F20073C6EF /* LLFGetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFGetViewController.swift; sourceTree = "<group>"; };
 		3C74DB112241E0C60073C6EF /* LLFgetPushHolidayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFgetPushHolidayModel.swift; sourceTree = "<group>"; };
 		3C86394122407EF1000FDF82 /* LLFBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFBaseModel.swift; sourceTree = "<group>"; };
@@ -78,11 +105,6 @@
 		3CA051DE2238E70400DA81FF /* LLFSwifDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LLFSwifDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA051E22238E70400DA81FF /* LLFSwifDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFSwifDemoUITests.swift; sourceTree = "<group>"; };
 		3CA051E42238E70400DA81FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3CA052092238E96500DA81FF /* LLFBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFBaseViewController.swift; sourceTree = "<group>"; };
-		3CA0520D2238EA0800DA81FF /* LLFBaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFBaseNavigationViewController.swift; sourceTree = "<group>"; };
-		3CA0520F2238EA2B00DA81FF /* LLFBaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFBaseTabBarViewController.swift; sourceTree = "<group>"; };
-		3CA052112238EAE200DA81FF /* LLFWKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFWKWebViewController.swift; sourceTree = "<group>"; };
-		3CA052152238F32500DA81FF /* LLFNewFeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFNewFeatureViewController.swift; sourceTree = "<group>"; };
 		3CA052172238F35700DA81FF /* LLFOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFOneViewController.swift; sourceTree = "<group>"; };
 		3CA052192238F36C00DA81FF /* LLFTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFTwoViewController.swift; sourceTree = "<group>"; };
 		3CA0521B2238F37D00DA81FF /* LLFThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFThreeViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +149,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C609035224379CB00ECF7B9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3C609036224379D400ECF7B9 /* UIWindow+Category.h */,
+				3C609037224379D400ECF7B9 /* UIWindow+Category.m */,
+				3C0DA6E1224487B9006C8D4E /* UIView+Extension.swift */,
+				3C0DA6E3224487E9006C8D4E /* NSObject+Extension.swift */,
+				3C0DA6E5224487F1006C8D4E /* Date+Extension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		3CA051B62238E70200DA81FF = {
 			isa = PBXGroup;
 			children = (
@@ -201,7 +235,7 @@
 		3CA051F12238E75800DA81FF /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				3CD9E360223A3E0B00783FF8 /* Extension */,
+				3C609035224379CB00ECF7B9 /* Category */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -217,7 +251,8 @@
 		3CA051F32238E78C00DA81FF /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
-				3CA052062238E89A00DA81FF /* ViewController */,
+				3CC446B82243402700F8FCD2 /* OCBaseViewController */,
+				3CA052062238E89A00DA81FF /* SwiftBaseViewController */,
 				3CA052052238E88F00DA81FF /* Model */,
 				3CA052042238E88800DA81FF /* View */,
 			);
@@ -379,23 +414,32 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		3CA052062238E89A00DA81FF /* ViewController */ = {
+		3CA052062238E89A00DA81FF /* SwiftBaseViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3CA052092238E96500DA81FF /* LLFBaseViewController.swift */,
-				3CA0520F2238EA2B00DA81FF /* LLFBaseTabBarViewController.swift */,
-				3CA0520D2238EA0800DA81FF /* LLFBaseNavigationViewController.swift */,
-				3CA052112238EAE200DA81FF /* LLFWKWebViewController.swift */,
-				3CA052152238F32500DA81FF /* LLFNewFeatureViewController.swift */,
+				3C60902D2243781000ECF7B9 /* LLLBaseViewController.swift */,
+				3C60902F2243785D00ECF7B9 /* LLLBaseTabBarController.swift */,
+				3C6090312243789D00ECF7B9 /* LLLBaseNavigationViewController.swift */,
+				3C609033224378E200ECF7B9 /* LLLWKWebViewController.swift */,
 			);
-			path = ViewController;
+			path = SwiftBaseViewController;
 			sourceTree = "<group>";
 		};
-		3CD9E360223A3E0B00783FF8 /* Extension */ = {
+		3CC446B82243402700F8FCD2 /* OCBaseViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3C60901B224375F100ECF7B9 /* LLFBaseViewController.h */,
+				3C60901C224375F100ECF7B9 /* LLFBaseViewController.m */,
+				3C60903922437ACD00ECF7B9 /* LLFBaseTabBarViewController.h */,
+				3C60903A22437ACD00ECF7B9 /* LLFBaseTabBarViewController.m */,
+				3C609021224376C400ECF7B9 /* LLFBaseNavigationeController.h */,
+				3C609022224376C400ECF7B9 /* LLFBaseNavigationeController.m */,
+				3C6090272243771000ECF7B9 /* LLFWKWebViewController.h */,
+				3C6090242243770F00ECF7B9 /* LLFWKWebViewController.m */,
+				3C6090252243771000ECF7B9 /* NewFeatureViewController.h */,
+				3C6090262243771000ECF7B9 /* NewFeatureViewController.m */,
 			);
-			path = Extension;
+			path = OCBaseViewController;
 			sourceTree = "<group>";
 		};
 		50CD40AF51701E68C7D3DFAE /* Pods */ = {
@@ -613,29 +657,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CA052122238EAE200DA81FF /* LLFWKWebViewController.swift in Sources */,
+				3C609023224376C400ECF7B9 /* LLFBaseNavigationeController.m in Sources */,
+				3C6090292243771000ECF7B9 /* NewFeatureViewController.m in Sources */,
 				3CD9E35D223A3AA300783FF8 /* YYYViewController.m in Sources */,
+				3C6090322243789D00ECF7B9 /* LLLBaseNavigationViewController.swift in Sources */,
 				3CA051C32238E70200DA81FF /* AppDelegate.swift in Sources */,
-				3CA0520E2238EA0800DA81FF /* LLFBaseNavigationViewController.swift in Sources */,
+				3C6090282243771000ECF7B9 /* LLFWKWebViewController.m in Sources */,
 				3C863948224082FD000FDF82 /* LLFOneViewModel.swift in Sources */,
 				3CE5A10E224217AB00669E16 /* LLFgetPushModel.swift in Sources */,
+				3C609034224378E200ECF7B9 /* LLLWKWebViewController.swift in Sources */,
+				3C609038224379D400ECF7B9 /* UIWindow+Category.m in Sources */,
 				3C74DB102241C9F20073C6EF /* LLFGetViewController.swift in Sources */,
 				3CA0521E2238F38F00DA81FF /* LLFFourViewController.swift in Sources */,
+				3C60903B22437ACE00ECF7B9 /* LLFBaseTabBarViewController.m in Sources */,
 				3CA052182238F35700DA81FF /* LLFOneViewController.swift in Sources */,
 				3C86394A2240921C000FDF82 /* BuildBaseInfoModel.swift in Sources */,
+				3C60901D224375F100ECF7B9 /* LLFBaseViewController.m in Sources */,
 				3CD9E35F223A3C9F00783FF8 /* AppSwifConfig.swift in Sources */,
 				3C86394422407F0D000FDF82 /* LLFListModel.swift in Sources */,
+				3C0DA6E2224487B9006C8D4E /* UIView+Extension.swift in Sources */,
 				3C86394622407F20000FDF82 /* LLFDictionaryModel.swift in Sources */,
 				3C74DB122241E0C60073C6EF /* LLFgetPushHolidayModel.swift in Sources */,
+				3C0DA6E6224487F1006C8D4E /* Date+Extension.swift in Sources */,
 				3C86394222407EF1000FDF82 /* LLFBaseModel.swift in Sources */,
+				3C6090302243785D00ECF7B9 /* LLLBaseTabBarController.swift in Sources */,
 				3C0FF0A8223F2AFB0090466F /* LLFOneViewTableViewCell.swift in Sources */,
 				3CA0521A2238F36C00DA81FF /* LLFTwoViewController.swift in Sources */,
+				3C60902E2243781000ECF7B9 /* LLLBaseViewController.swift in Sources */,
+				3C0DA6E4224487E9006C8D4E /* NSObject+Extension.swift in Sources */,
 				3CE5A11222422B3C00669E16 /* ConnectManger.swift in Sources */,
 				3CE5A110224225B600669E16 /* LLFPostViewController.swift in Sources */,
 				3CA0521C2238F37D00DA81FF /* LLFThreeViewController.swift in Sources */,
-				3CA0520A2238E96500DA81FF /* LLFBaseViewController.swift in Sources */,
-				3CA052162238F32500DA81FF /* LLFNewFeatureViewController.swift in Sources */,
-				3CA052102238EA2B00DA81FF /* LLFBaseTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

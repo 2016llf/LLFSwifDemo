@@ -1,18 +1,18 @@
 //
-//  LLFBaseTabBarViewController.swift
+//  LLLBaseTabBarController.swift
 //  LLFSwifDemo
 //
-//  Created by 帮啦跑腿 on 2019/3/13.
+//  Created by 帮啦跑腿 on 2019/3/21.
 //  Copyright © 2019 刘龙飞. All rights reserved.
 //
 
 import UIKit
 
-class LLFBaseTabBarViewController: UITabBarController {
+class LLLBaseTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         tabBar.tintColor = UIColor.orange //tabbar 字体颜色
@@ -22,14 +22,14 @@ class LLFBaseTabBarViewController: UITabBarController {
         self.addChildVC(childVC: LLFTwoViewController(), childTitle: "Second", imageName: "bs_hui", selectedImageName: "bs_red")
         self.addChildVC(childVC: LLFThreeViewController(), childTitle: "Third", imageName: "bs_hui", selectedImageName: "bs_red")
         self.addChildVC(childVC: LLFFourViewController(), childTitle: "Fourth", imageName: "bs_hui", selectedImageName: "bs_red")
-    
+        
     }
     
     
     /// 添加子控制器
     private func addChildVC(childVC: UIViewController, childTitle: String, imageName: String, selectedImageName:String)
     {
-        let navigation = LLFBaseNavigationViewController(rootViewController: childVC)
+        let navigation = LLLBaseNavigationViewController(rootViewController: childVC)
         navigation.navigationBar.tintColor = UIColor.white //item 字体颜色
         navigation.navigationBar.barTintColor = UIColor.yellow //背景颜色
         //标题颜色
@@ -38,5 +38,5 @@ class LLFBaseTabBarViewController: UITabBarController {
         childVC.tabBarItem.selectedImage = UIImage(named: selectedImageName)?.withRenderingMode(.alwaysOriginal)
         self.addChild(navigation)
     }
-
+    
 }
