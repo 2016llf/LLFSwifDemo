@@ -10,12 +10,13 @@ import UIKit
 import SwiftyJSON
 
 class LLFOneViewModel: NSObject {
-    var build_name = ""
-    var build_address = ""
-    var build_num = ""
-    var room_num = ""
-    var area_address = ""
+    var build_name : String?
+    var build_address : String?
+    var build_num : String?
+    var room_num : String?
+    var area_address : String?
     
+
     init(jsonData: JSON) {
         build_name    = jsonData["build_name"].stringValue
         build_address = jsonData["build_address"].stringValue

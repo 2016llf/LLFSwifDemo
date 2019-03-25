@@ -20,17 +20,26 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWQ-uM-Hxw">
-                        <rect key="frame" x="26" y="11" width="268" height="22"/>
+                        <rect key="frame" x="26" y="11" width="178" height="22"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eu-Vc-cKU">
+                        <rect key="frame" x="264" y="7" width="46" height="30"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="touchMyButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vjI-eU-R63"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="UWQ-uM-Hxw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="2mQ-m8-Ex3"/>
                     <constraint firstItem="UWQ-uM-Hxw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="3bo-KM-kIe"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="UWQ-uM-Hxw" secondAttribute="trailing" constant="10" id="BmJ-v2-We3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="UWQ-uM-Hxw" secondAttribute="trailing" constant="100" id="BmJ-v2-We3"/>
                     <constraint firstAttribute="bottomMargin" secondItem="UWQ-uM-Hxw" secondAttribute="bottom" id="es5-zK-i6n"/>
+                    <constraint firstAttribute="trailing" secondItem="6eu-Vc-cKU" secondAttribute="trailing" constant="10" id="iQK-2v-Rhb"/>
+                    <constraint firstItem="6eu-Vc-cKU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ziV-UW-lA1"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

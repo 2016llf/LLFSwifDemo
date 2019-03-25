@@ -10,9 +10,9 @@ import UIKit
 import SwiftyJSON
 
 class LLFgetPushModel: NSObject {
-    var desc = ""
-    var title = ""
-    var url = ""
+    var desc : String?
+    var title : String?
+    var url : String?
     
     init(jsonData: JSON) {
         desc = jsonData["desc"].stringValue

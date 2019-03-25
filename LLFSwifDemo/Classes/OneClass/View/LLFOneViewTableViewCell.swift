@@ -10,7 +10,17 @@ import UIKit
 
 class LLFOneViewTableViewCell: UITableViewCell {
 
+    //定义一个闭包，带有两个参数
+    var bbchange :((_ title:String,_ coloer:UIColor)->Void)?
+
+
     @IBOutlet weak var blLable: UILabel!
+    
+    @IBAction func touchMyButton(_ sender: UIButton) {
+        
+        bbchange?("成龙",UIColor.red)
+
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,6 +31,11 @@ class LLFOneViewTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+
+    func configCellWith(Model model:LLFgetPushModel){
+        self.blLable.text = model.title
     }
     
 }

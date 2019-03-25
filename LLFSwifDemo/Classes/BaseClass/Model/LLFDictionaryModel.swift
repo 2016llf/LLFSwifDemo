@@ -13,9 +13,9 @@ import SwiftyJSON
 
 class LLFDictionaryModel: LLFBaseModel {
 //    @property (strong, nonatomic) NSDictionary * datas;
-    var realName = ""
-
-    override func setValue(_ value: Any?, forUndefinedKey key: String) {
-        
-    }
+//    var realName = ""
+//
+//    override func setValue(_ value: Any?, forUndefinedKey key: String) {
+//
+//    }
 }

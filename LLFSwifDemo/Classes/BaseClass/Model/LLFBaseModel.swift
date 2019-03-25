@@ -12,8 +12,8 @@ import SwiftyJSON
 ///模型基础
 class LLFBaseModel: NSObject {
     
-    var code = 0
-    var msg = ""
+    var code: NSInteger?
+    var msg: String?
     
     init(jsonData: JSON) {
         code    = jsonData["code"].intValue

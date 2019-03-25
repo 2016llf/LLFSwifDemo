@@ -11,8 +11,8 @@ import SwiftyJSON
 
 class LLFgetPushHolidayModel: NSObject {
     var datas: DatasModel
-    var code = 0
-    var msg = ""
+    var code : NSInteger?
+    var msg : String?
 
     init(jsonData: JSON) {
         datas = DatasModel(jsonData: jsonData["datas"])
@@ -26,7 +26,7 @@ class LLFgetPushHolidayModel: NSObject {
 
 class DatasModel: NSObject {
     var data:[Any]?
-    var count = 0
+    var count : NSInteger?
 
     init(jsonData: JSON) {
         data = jsonData["data"].arrayObject

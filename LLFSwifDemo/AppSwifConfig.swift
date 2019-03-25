@@ -24,7 +24,7 @@ var DOMAIN_PATH         =        "http://apiv2.wocaicai.com/caicai/api/v1/"
 func LLLog<message>(message: message, file: NSString = #file, method: String = #function, line: Int = #line)
 {
     #if DEBUG
-    print("\(method) - [line:\(line)] - \(message)")
+    print("\(method) - [line:\(line)] - \(message)  \n")
     #endif
 }
 
