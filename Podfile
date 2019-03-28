@@ -7,4 +7,5 @@ target 'LLFSwifDemo' do
     pod 'SwiftyJSON'
     pod 'SDCycleScrollView'
     pod 'MJRefresh'
+    pod 'MBProgressHUD'
 end

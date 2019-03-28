@@ -9,7 +9,7 @@
 
 import UIKit
 import Alamofire
-
+import MBProgressHUD
 class LLFFourViewController: LLFBaseViewController {
 
     override func viewDidLoad() {
@@ -18,23 +18,23 @@ class LLFFourViewController: LLFBaseViewController {
         // Do any additional setup after loading the view.
         
         let btn = UIButton(type: .custom)
-        btn.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        btn.frame = CGRect(x: KScreenWidth/2 - 50, y: 0, width: 100, height: 100)
         btn.backgroundColor = UIColor.yellow
         btn.setTitleColor(UIColor.black, for: .normal)
         btn.setTitle("下一个页面", for: .normal)
         btn.addTarget(self, action: #selector(touchBtn(btn:)), for: .touchUpInside)
-        
         self.view.addSubview(btn)
         
-        
+        MBProgressHUD.showSuccess("成功")
+
     }
     
     @objc func touchBtn(btn: UIButton){
-//        let vc = LLFWKWebViewController()
-//        vc.title = "我是一个网页"
-//        vc.url = "https://www.hao123.com"
-//        vc.webView.reload()
-//        self.navigationController?.pushViewController(vc, animated: true)
+        let vc = LLLWKWebViewController()
+        vc.title = "我是一个网页"
+        vc.urlStr = "https://www.hao123.com"
+        vc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
     

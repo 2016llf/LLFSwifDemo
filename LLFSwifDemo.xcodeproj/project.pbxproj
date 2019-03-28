@@ -39,8 +39,11 @@
 		3CA0521C2238F37D00DA81FF /* LLFThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0521B2238F37D00DA81FF /* LLFThreeViewController.swift */; };
 		3CA0521E2238F38F00DA81FF /* LLFFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0521D2238F38F00DA81FF /* LLFFourViewController.swift */; };
 		3CA052202239068600DA81FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA0521F2239068600DA81FF /* Images.xcassets */; };
+		3CD1CEC02249C24E00631602 /* LLFCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1CEBE2249C24E00631602 /* LLFCollectionViewCell.swift */; };
+		3CD1CEC12249C24E00631602 /* LLFCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CD1CEBF2249C24E00631602 /* LLFCollectionViewCell.xib */; };
 		3CD9E35D223A3AA300783FF8 /* YYYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CD9E35C223A3AA300783FF8 /* YYYViewController.m */; };
 		3CD9E35F223A3C9F00783FF8 /* AppSwifConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD9E35E223A3C9F00783FF8 /* AppSwifConfig.swift */; };
+		3CDE1BAE224C694800CFDAA1 /* MBProgressHud+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDE1BAD224C694800CFDAA1 /* MBProgressHud+Category.swift */; };
 		3CE5A10E224217AB00669E16 /* LLFgetPushModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5A10D224217AB00669E16 /* LLFgetPushModel.swift */; };
 		3CE5A110224225B600669E16 /* LLFPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5A10F224225B600669E16 /* LLFPostViewController.swift */; };
 		3CE5A11222422B3C00669E16 /* ConnectManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE5A11122422B3C00669E16 /* ConnectManger.swift */; };
@@ -110,12 +113,15 @@
 		3CA0521B2238F37D00DA81FF /* LLFThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFThreeViewController.swift; sourceTree = "<group>"; };
 		3CA0521D2238F38F00DA81FF /* LLFFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFFourViewController.swift; sourceTree = "<group>"; };
 		3CA0521F2239068600DA81FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3CD1CEBE2249C24E00631602 /* LLFCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFCollectionViewCell.swift; sourceTree = "<group>"; };
+		3CD1CEBF2249C24E00631602 /* LLFCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLFCollectionViewCell.xib; sourceTree = "<group>"; };
 		3CD9E355223A374600783FF8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		3CD9E356223A382A00783FF8 /* AppOCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppOCConfig.h; sourceTree = "<group>"; };
 		3CD9E357223A38B800783FF8 /* LLFSwifDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LLFSwifDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		3CD9E35B223A3AA300783FF8 /* YYYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYYViewController.h; sourceTree = "<group>"; };
 		3CD9E35C223A3AA300783FF8 /* YYYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYYViewController.m; sourceTree = "<group>"; };
 		3CD9E35E223A3C9F00783FF8 /* AppSwifConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSwifConfig.swift; sourceTree = "<group>"; };
+		3CDE1BAD224C694800CFDAA1 /* MBProgressHud+Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MBProgressHud+Category.swift"; sourceTree = "<group>"; };
 		3CE5A10D224217AB00669E16 /* LLFgetPushModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFgetPushModel.swift; sourceTree = "<group>"; };
 		3CE5A10F224225B600669E16 /* LLFPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLFPostViewController.swift; sourceTree = "<group>"; };
 		3CE5A11122422B3C00669E16 /* ConnectManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectManger.swift; sourceTree = "<group>"; };
@@ -157,6 +163,7 @@
 				3C0DA6E1224487B9006C8D4E /* UIView+Extension.swift */,
 				3C0DA6E3224487E9006C8D4E /* NSObject+Extension.swift */,
 				3C0DA6E5224487F1006C8D4E /* Date+Extension.swift */,
+				3CDE1BAD224C694800CFDAA1 /* MBProgressHud+Category.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -332,6 +339,8 @@
 		3CA051FB2238E81C00DA81FF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3CD1CEBE2249C24E00631602 /* LLFCollectionViewCell.swift */,
+				3CD1CEBF2249C24E00631602 /* LLFCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -570,6 +579,7 @@
 				3CA052202239068600DA81FF /* Images.xcassets in Resources */,
 				3CA051CD2238E70400DA81FF /* LaunchScreen.storyboard in Resources */,
 				3C0FF0A9223F2AFB0090466F /* LLFOneViewTableViewCell.xib in Resources */,
+				3CD1CEC12249C24E00631602 /* LLFCollectionViewCell.xib in Resources */,
 				3CA051CA2238E70400DA81FF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -632,6 +642,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LLFSwifDemo/Pods-LLFSwifDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -640,6 +651,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -679,11 +691,13 @@
 				3C86394622407F20000FDF82 /* LLFDictionaryModel.swift in Sources */,
 				3C74DB122241E0C60073C6EF /* LLFgetPushHolidayModel.swift in Sources */,
 				3C0DA6E6224487F1006C8D4E /* Date+Extension.swift in Sources */,
+				3CDE1BAE224C694800CFDAA1 /* MBProgressHud+Category.swift in Sources */,
 				3C86394222407EF1000FDF82 /* LLFBaseModel.swift in Sources */,
 				3C6090302243785D00ECF7B9 /* LLLBaseTabBarController.swift in Sources */,
 				3C0FF0A8223F2AFB0090466F /* LLFOneViewTableViewCell.swift in Sources */,
 				3CA0521A2238F36C00DA81FF /* LLFTwoViewController.swift in Sources */,
 				3C60902E2243781000ECF7B9 /* LLLBaseViewController.swift in Sources */,
+				3CD1CEC02249C24E00631602 /* LLFCollectionViewCell.swift in Sources */,
 				3C0DA6E4224487E9006C8D4E /* NSObject+Extension.swift in Sources */,
 				3CE5A11222422B3C00669E16 /* ConnectManger.swift in Sources */,
 				3CE5A110224225B600669E16 /* LLFPostViewController.swift in Sources */,
@@ -864,10 +878,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LLFSwifDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = LLFSwifDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bangla.com.LLFSwifDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LLFSwifDemo/LLFSwifDemo-Bridging-Header.h";
@@ -891,10 +902,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LLFSwifDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = LLFSwifDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bangla.com.LLFSwifDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LLFSwifDemo/LLFSwifDemo-Bridging-Header.h";
@@ -911,11 +919,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HF95XL8283;
 				INFOPLIST_FILE = LLFSwifDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bangla.com.LLFSwifDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -932,11 +936,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HF95XL8283;
 				INFOPLIST_FILE = LLFSwifDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bangla.com.LLFSwifDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -952,11 +952,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HF95XL8283;
 				INFOPLIST_FILE = LLFSwifDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bangla.com.LLFSwifDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -972,11 +968,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HF95XL8283;
 				INFOPLIST_FILE = LLFSwifDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bangla.com.LLFSwifDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

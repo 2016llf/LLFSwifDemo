@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 import MJRefresh
+import MBProgressHUD
 
 class LLFGetViewController: LLFBaseViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -60,15 +61,15 @@ class LLFGetViewController: LLFBaseViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LLFOneViewTableViewCell", for: indexPath) as! LLFOneViewTableViewCell
-        
+        let cell:LLFOneViewTableViewCell = tableView.dequeueReusableCell(withIdentifier: "LLFOneViewTableViewCell", for: indexPath) as! LLFOneViewTableViewCell
+
         let model = LLFgetPushModel.init(jsonData: JSON.init(self.dataArray[indexPath.row]))
         
         cell.configCellWith(Model: model)
     
         ///实现回调
         cell.bbchange = { (title:String,coloer:UIColor) in
-            print(title)
+            MBProgressHUD.showSuccess("成功")
         }
 
         

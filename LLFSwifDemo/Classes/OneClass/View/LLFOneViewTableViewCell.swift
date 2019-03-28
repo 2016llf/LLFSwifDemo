@@ -18,7 +18,7 @@ class LLFOneViewTableViewCell: UITableViewCell {
     
     @IBAction func touchMyButton(_ sender: UIButton) {
         
-        bbchange?("成龙",UIColor.red)
+        bbchange?("龙飞",UIColor.red)
 
     }
     
