@@ -64,6 +64,10 @@ class LLFOneViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        guard let vc = magicView .dequeueReusablePage(withIdentifier: String.init(pageIndex)) as? oneViewController else {
+//            return oneViewController()
+//        }
+        
         let cell:LLFOneViewTableViewCell = tableView.dequeueReusableCell(withIdentifier: "LLFOneViewTableViewCell", for: indexPath) as! LLFOneViewTableViewCell
 
         cell.blLable.text = self.titleArray[indexPath.row]
@@ -121,7 +125,7 @@ class LLFOneViewController: UIViewController,UITableViewDelegate,UITableViewData
                                         "area_address":"广东省梅州市梅江区学海路"]
         
         let model = LLFOneViewModel(jsonData: JSON(baseInfo))
-        LLLog(message: model.area_address)
+        LLLog(message: model.area_address!)
         
         
         // 面积中89是Int， 109和129是String
@@ -138,7 +142,8 @@ class LLFOneViewController: UIViewController,UITableViewDelegate,UITableViewData
         
         
         let modelNext = BuildBaseInfoModel(jsonData: JSON(baseInfoNext))
-        LLLog(message: modelNext.detail_address.city)
+        LLLog(message: modelNext.detail_address.city!)
+        print(modelNext.detail_address.city!)
         
     }
     //MARK: - private methods
