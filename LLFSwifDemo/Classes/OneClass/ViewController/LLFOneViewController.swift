@@ -64,10 +64,7 @@ class LLFOneViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        guard let vc = magicView .dequeueReusablePage(withIdentifier: String.init(pageIndex)) as? oneViewController else {
-//            return oneViewController()
-//        }
-        
+ 
         let cell:LLFOneViewTableViewCell = tableView.dequeueReusableCell(withIdentifier: "LLFOneViewTableViewCell", for: indexPath) as! LLFOneViewTableViewCell
 
         cell.blLable.text = self.titleArray[indexPath.row]

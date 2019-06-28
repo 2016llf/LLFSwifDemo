@@ -94,6 +94,10 @@ class LLFPostViewController: LLFBaseViewController, UITableViewDelegate, UITable
       
     }
     
+    deinit {
+        print("我被销毁了")
+    }
+    
     // MARK - requestData
     
       func requestData(){

@@ -36,6 +36,8 @@ class LLFGetViewController: LLFBaseViewController, UITableViewDelegate, UITableV
         return tableView
         
     }()
+    
+
 
     // MARK - Life Cycle
     
@@ -48,6 +50,10 @@ class LLFGetViewController: LLFBaseViewController, UITableViewDelegate, UITableV
         
         self.tableView.mj_header.beginRefreshing()
         
+    }
+    
+    deinit {
+        print("我被销毁了")
     }
     
     //MARK: - UITableViewDataSource
